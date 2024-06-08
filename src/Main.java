@@ -15,7 +15,5 @@ public class Main {
         System.out.println("3. Gradle: Another industry standard. " +
                 "An open-source build automation system that supports Maven and Ivy repositories for declaring the configuration of a project. " +
                 "Lots of open-source projects such as Spring are using it now. It is faster than Maven for most scenarios, thanks to its incremental builds");
-
-        git init, git add -A,
     }
 }
