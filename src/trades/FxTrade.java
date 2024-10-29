@@ -22,6 +22,11 @@ public class FxTrade extends FinancialInstrument implements Tradable {
         setStatus("Canceled");
     }
 
+    @Override
+    public void TestMethod() {
+
+    };
+
     public double getAmount() {
         return amount;
     }
