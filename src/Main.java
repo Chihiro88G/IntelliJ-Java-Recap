@@ -1,3 +1,5 @@
+import email.EmailService;
+import email.UserService;
 import trades.ForwardTrade;
 import trades.FxTrade;
 import trades.SpotTrade;
@@ -9,5 +11,11 @@ public class Main {
         FxTrade trade1 = new SpotTrade("XXX", "name1", 100, 0.5);
         FxTrade trade2 = new ForwardTrade("YYY", "name2", 200, 0.3);
 
+        EmailService emailService = new EmailService();
+        UserService userService = new UserService(emailService);
+
+        // Setter Injection
+//        UserService userService = new UserService();
+//        userService.setEmailService(new EmailService());
     }
 }
